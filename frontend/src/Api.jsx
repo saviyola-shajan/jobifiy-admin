@@ -1,14 +1,11 @@
-// src/api.js
 import axios from 'axios';
 
-// Create an Axios instance
 const api = axios.create({
   baseURL: 'http://localhost:5000/api',
 });
 
-// Interceptor to add the Authorization header
 api.interceptors.request.use(config => {
-  const token = localStorage.getItem('token'); // Assume token is stored in localStorage
+  const token = localStorage.getItem('token'); 
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }

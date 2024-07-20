@@ -1,4 +1,3 @@
-// src/pages/Jobs.js
 import  { useState, useEffect } from 'react';
 import { getJobs, deleteJob } from '../Api';
 import { Link } from 'react-router-dom';

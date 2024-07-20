@@ -1,4 +1,3 @@
-// src/pages/Companies.js
 import { useState, useEffect } from 'react';
 import { getCompanies, deleteCompany } from '../Api';
 import { Link } from 'react-router-dom';

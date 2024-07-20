@@ -129,7 +129,6 @@ const loginAdmin = (async (req, res) => {
 
     // JOBS CONTROLLERS
 
-    // Create a new job
    const addJob=( async (req, res) => {
         const { title, description, company,location,salary } = req.body;
       
@@ -137,7 +136,6 @@ const loginAdmin = (async (req, res) => {
             return res.status(400).json({ error: 'Invalid company ID' });
           }
         
-          // Create a new job
           const job = new Job({
             title,
             description,

@@ -26,7 +26,6 @@ const AddJob = () => {
     e.preventDefault();
     try {
       await addJob({ title, description, company, location, salary });
-      // Handle successful job addition (e.g., show a message or redirect)
     } catch (error) {
       console.error('Error adding job:', error);
     }
